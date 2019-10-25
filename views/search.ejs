@@ -1,0 +1,73 @@
+<html>
+    
+    <head>
+        <title>Fastest ER</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/stylesheets/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    </head>
+    
+  <body>
+         <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
+            <div class="collapse navbar-collapse" id="navbarText">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Fastest ER</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/">Go back</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <header class="jumbotron" style="background: rgba(255, 255, 255, 0.3)">
+             <div class="container">
+                 <h1 style="color: white;">Fastest ER</h1>
+                 <p style="color: white;">Emergency Rooms found in your area and their respective Timely and Effective Care Index</p>
+             </div>
+        </header>
+    
+         <div class="container"  style="width: 80%; margin: 0 auto 0 auto;">
+             <div class="row">
+                <h2 style="text-align: center; color: white;">Search by ZIP Code</h2>
+                <div style="width: 100%; margin: 25px auto;">
+                    <form action="/route" method="GET">
+                        <div class="form-group" style="width: 30%; margin: 10px auto 10px auto;">
+                            <input type="text" placeholder="ZIP Code" name="search_zip" style="width:100%;font-size:20px;">
+                        </div>
+                        <div class="form-group" style="width: 30%; margin: 10px auto 10px auto;">
+                            <input type="text" placeholder="Maximum radius (In miles)" name="search_radius" style="width:100%;font-size:20px;">
+                        </div>
+                        <div class="form-group" style="width:30%; margin: 10px auto 10px auto;">
+                            <input type="submit" value="Search" class="btn btn-md btn-success btn-block">
+                        </div>
+                    </form>
+                </div>           
+            </div>
+        </div>
+   
+
+   </body>
+</html>
+
+<footer class="page-footer font-small teal pt-4"  style="margin: 180px auto 10px auto;">
+
+  <div class="container-fluid text-center text-md-left">
+    <div class="row">
+        <hr class="clearfix w-100 d-md-none pb-3">
+          <div class="col-md-6 mt-md-0 mt-3">
+            <h5 class="text-uppercase font-weight-bold" style="color: white;">Coverage</h5>
+            <p style="color: white;text-align: justify; text-justify: inter-word;">Temporary this application only cover the Emergency Departmenst in the DMV area (Maryland, Virginia and Wshington DC), we are still working to expand
+            our services to the entire country </p>
+          </div>
+          <div class="col-md-6 mb-md-0 mb-3">
+            <h5 class="text-uppercase font-weight-bold" style="color: white;">Scores</h5>
+            <p style="color: white; text-align: justify; text-justify: inter-word;">The scores assigned to each Emergency room are based in the data taken from the Center for Medicare and Medicaid Services</p>
+          </div>
+        </div>
+    </div>
+  <div class="footer-copyright text-center py-3" style="color: grey;">© 2019 Copyright:</div>
+  
+</footer>
+
